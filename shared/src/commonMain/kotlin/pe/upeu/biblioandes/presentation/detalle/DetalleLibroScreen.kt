@@ -15,6 +15,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.LibraryBooks
 import androidx.compose.material.icons.filled.Book
 import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.Category
@@ -182,7 +183,7 @@ fun DetalleLibroScreen(
                                     valor = libro.sede
                                 )
                                 FilaDetalle(
-                                    icono = Icons.Default.LibraryBooks,
+                                    icono = Icons.AutoMirrored.Filled.LibraryBooks,
                                     etiqueta = "Ejemplares en estante",
                                     valor = if (tieneStock) "${libro.ejemplaresDisponibles} copias disponibles" else "Agotado",
                                     valorColor = if (tieneStock) ColorDisponible else ColorAgotado
@@ -276,7 +277,7 @@ fun DetalleLibroScreen(
                                 Text("Procesando solicitud...")
                             } else {
                                 Icon(
-                                    imageVector = Icons.Default.LibraryBooks,
+                                    imageVector = Icons.AutoMirrored.Filled.LibraryBooks,
                                     contentDescription = null
                                 )
                                 Spacer(modifier = Modifier.width(8.dp))
