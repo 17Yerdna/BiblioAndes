@@ -106,7 +106,7 @@ fun PrestamosScreen(
                     EstadoVacio(
                         titulo = "No hay préstamos registrados",
                         subtitulo = "No se encontraron préstamos para la categoría seleccionada.",
-                        icono = Icons.Default.Assignment
+                        icono = Icons.AutoMirrored.Filled.Assignment
                     )
                 }
                 is FasePrestamos.Contenido -> {

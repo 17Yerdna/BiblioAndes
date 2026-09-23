@@ -188,7 +188,7 @@ fun InicioScreen(
                         )
                         Spacer(modifier = Modifier.width(4.dp))
                         Icon(
-                            imageVector = Icons.Default.ArrowForward,
+                            imageVector = Icons.AutoMirrored.Filled.ArrowForward,
                             contentDescription = null,
                             tint = MaterialTheme.colorScheme.primary,
                             modifier = Modifier.size(14.dp)
@@ -328,7 +328,7 @@ fun InicioScreen(
                     .height(48.dp),
                 shape = MaterialTheme.shapes.medium
             ) {
-                Icon(imageVector = Icons.Default.Assignment, contentDescription = null)
+                Icon(imageVector = Icons.AutoMirrored.Filled.Assignment, contentDescription = null)
                 Spacer(modifier = Modifier.width(6.dp))
                 Text("Mis Préstamos")
             }
