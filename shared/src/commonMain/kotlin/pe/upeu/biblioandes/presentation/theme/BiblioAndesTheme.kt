@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.ui.graphics.Color
 
 // Controlador global de modo oscuro para conmutación inmediata en toda la app (RF-06)
 class ThemeController(initialDarkMode: Boolean = false) {

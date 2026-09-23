@@ -12,6 +12,8 @@ import pe.upeu.biblioandes.domain.usecase.ObtenerPrestamosUseCase
 import pe.upeu.biblioandes.domain.usecase.SolicitarPrestamoUseCase
 import pe.upeu.biblioandes.presentation.catalogo.CatalogoViewModel
 import pe.upeu.biblioandes.presentation.detalle.DetalleLibroViewModel
+import pe.upeu.biblioandes.presentation.inicio.InicioViewModel
+import pe.upeu.biblioandes.presentation.prestamos.PrestamosViewModel
 
 val dataModule = module {
     single<BibliotecaRepository> { BibliotecaRepositoryFake() }
@@ -24,8 +26,10 @@ val domainModule = module {
 }
 
 val presentationModule = module {
+    viewModelOf(::InicioViewModel)
     viewModelOf(::CatalogoViewModel)
     viewModelOf(::DetalleLibroViewModel)
+    viewModelOf(::PrestamosViewModel)
 }
 
 fun initKoin(appDeclaration: KoinAppDeclaration = {}) = startKoin {
