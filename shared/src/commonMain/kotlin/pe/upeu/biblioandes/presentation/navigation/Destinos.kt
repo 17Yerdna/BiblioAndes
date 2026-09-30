@@ -19,7 +19,8 @@ sealed class Destino(val ruta: String, val titulo: String, val icono: ImageVecto
     data class Detalle(val libroId: Int) : Destino("detalle/$libroId", "Detalle", Icons.Default.Book)
 
     companion object {
-        val DESTINOS_BARRA_INFERIOR: List<Destino> = listOf(Inicio, Catalogo, Prestamos, Perfil)
+        val DESTINOS_BARRA_INFERIOR: List<Destino>
+            get() = listOf(Inicio, Catalogo, Prestamos, Perfil)
 
         fun desdeRuta(ruta: String?): Destino {
             if (ruta == null) return Inicio
